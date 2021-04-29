@@ -6,22 +6,31 @@
         body{
             background-color: darkslategrey;
         }
+        
         #header{
            display: flex;
-           flex-direction:row;
+           flex-direction:column;
            justify-content:center;
-           background-color:blanchedalmond;
-           width:100%;
-           height:100px;
-           
+           background-color:blanchedalmond;align-items:center;
+  
+ 
+           position: fixed; 
+  top: 0px;
+  left: 0px;
+  max-width: 300px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+ 
 
         }
         #headerbtn{
             background-color:blanchedalmond ;
             border:none; 
             height:inherit;
-            Padding:0 20px 0 20px;
-            width:calc(50%/3);
+          
+            width:100%;
+           
         }
         #headerbtn:hover{
             background-color:cadetblue;
@@ -30,28 +39,55 @@
             text-decoration: none ;
             font-weight: 900;
         }
-        home{
+        #home{
            display: flex;
            flex-direction:column;
-           justify-content:center;
+           justify-content:space-around;
            align-items:center;
+           border-style: dotted;
            width:100%;
-           height:100px;
+           height:100%;
+padding-top:50px;
+           text-align: center;
         }
+        #profile-img{
+width:calc(100%/2);
+border-radius:100px;
+
+
+
+        }
+        #har{
+            display: flex;
+           flex-direction:column;
+           justify-content:center;
+           
+           height:calc(100%/3);width:100%;
+        }
+        body{ display: flex;
+           flex-direction:row;
+           justify-content:center;
+           
+           height:100% ;       }
+           section{
+               border-style: dotted;
+           }
 
     </style>
 	<title></title>
 </head>
-<body>
+<body>   
     <header id="header">
-        <button id="headerbtn"><a href=#home>HOME</a></button>
+        <img id="profile-img" src="resume-profile-image.jpeg" alt="">
+       <div id="har"><button id="headerbtn"><a href=#home>HOME</a></button>
         <button id="headerbtn"><a href=#about>ABOUT</a></button>
-        <button id="headerbtn"><a href=#resume>RESUME</a></button>
+        <button id="headerbtn"><a href=#resume>RESUME</a></button></div> 
     </header>
-    <div id="home">
+    <section id="home">
         <h1 height="30px" width="50px">Hi,My name is Rafi</h1>
-
-    </div>
-    <p>New commit test</p>
+        <h3>I am II<sup>nd</sup>year Computer science Engineering Student</h3>
+    
+    </section>
+    
 </body>
 </html>
